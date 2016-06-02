@@ -1,0 +1,503 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="res\ph_PWMngr.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\..\autonk\autonk.vcxproj" />
+    <None Include="res\ph_PWMngr.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ph_PWMngr.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ph_PWMngrDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MainMenuDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DevkeyBACKUP.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="APPKeyMngr.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="EncryptKeyMngr.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BackupKeyGen.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DevAdminMngr.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DevInfo.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ChoseAlgid.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SystemSmartKey.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="InitDevInfo.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="FistBackupKey.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SecBackupKey.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SignPWMAdmin.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="InitKeyTip.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DevFirstBackup.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DevKeyFirBac.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DevKeyFirResume.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="APPKeyGen.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="APPKeyChangePIN.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="EncryptKeyGen.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="EncryptKeyBackup.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="EncryptKeyResume.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="AdminGen.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="APPKeyResume.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DevIPMngr.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DevAdminKeyMngr.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TIPFormat.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TIPDistroy.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="IsInit.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SeeDetail.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ChangeInitPin.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DAI.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DAIDef.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SmartCTCAPI.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MyUtil.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="code.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Km_Error.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="misc.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ph_km.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="PHCDS_datatype.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="PHCDS_error.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ChoseFilePath.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyDAO.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\autonk\hidpi.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\autonk\hidsdi.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\autonk\hidusage.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\autonk\vld.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\autonk\vld_def.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyDevide.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="AppCertMngr.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CACertMngr.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ROOTCertMngr.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="AppCertKeyGen.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CACertAdd.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="RTCertAdd.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="VerifyStrategyOne.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="VerifyStragegyTwo.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="VerifyStragegyThree.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="VerifyStrategyFour.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="VerifyStrategyFive.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ReqInputKeyPwd.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="UserCertImport.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="LogQuery.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SeeLogDetail.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ServiceLogMngr.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ServiceLogDetail.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="AppIpMngr.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MngrLogAudit.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ServiceLogAudit.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ErrorLogAudit.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SysLogQuery.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ForRecoveryFilePath.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CheckKeyManager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="AppCertOnline.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="AppCertKeySet.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="AppCertNtfIp.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HttpSocket.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeMngr.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="UpdateSetMngr.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ph_PWMngr.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ph_PWMngrDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MainMenuDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DevkeyBACKUP.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="APPKeyMngr.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="EncryptKeyMngr.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="BackupKeyGen.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DevAdminMngr.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DevInfo.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ChoseAlgid.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SystemSmartKey.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="InitDevInfo.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="FistBackupKey.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SecBackupKey.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SignPWMAdmin.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="InitKeyTip.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DevKeyFirBac.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DevKeyFirResume.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="APPKeyGen.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="APPKeyChangePIN.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="EncryptKeyGen.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="EncryptKeyResume.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="AdminGen.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="APPKeyResume.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DevIPMngr.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DevAdminKeyMngr.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TIPFormat.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TIPDistroy.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="IsInit.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SeeDetail.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ChangeInitPin.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DAI.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MyUtil.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="misc.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ph_km.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ChoseFilePath.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyDAO.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Km_Error.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="AppCertMngr.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="code.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CACertMngr.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ROOTCertMngr.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="AppCertKeyGen.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CACertAdd.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="RTCertAdd.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="VerifyStrategyOne.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="VerifyStragegyTwo.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="VerifyStragegyThree.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="VerifyStrategyFour.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="VerifyStrategyFive.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ReqInputKeyPwd.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="UserCertImport.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LogQuery.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SeeLogDetail.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ServiceLogMngr.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ServiceLogDetail.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="AppIpMngr.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MngrLogAudit.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ServiceLogAudit.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ErrorLogAudit.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SysLogQuery.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ForRecoveryFilePath.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CheckKeyManager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="AppCertOnline.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="AppCertKeySet.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="AppCertNtfIp.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HttpSocket.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TimeMngr.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="UpdateSetMngr.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ph_PWMngr.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="KeyDevideDll.lib">
+      <Filter>资源文件</Filter>
+    </Library>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,10 @@
+LIBRARY autonk
+
+DESCRIPTION 'autonk'
+
+EXPORTS 
+	WHICH_KEY
+	WHICH_KEYEx
+	WHICH_KEYExx
+	WHICH_KEY_Symm_Hash
+

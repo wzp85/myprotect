@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A10BC363-DC8E-42F5-825C-1A4BD253E761}</ProjectGuid>
+    <RootNamespace>ph_PWMngr</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+    <PlatformToolset>v100</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+    <PlatformToolset>v100</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <EmbedManifest>false</EmbedManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <CallingConvention>StdCall</CallingConvention>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)inc</AdditionalIncludeDirectories>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <OutputFile>C:\Program Files (x86)\phsignmanager\ph_PWMngr.exe</OutputFile>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <CallingConvention>StdCall</CallingConvention>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="..\..\autonk\autonk.vcxproj" />
+    <None Include="ReadMe.txt" />
+    <None Include="res\ph_PWMngr.ico" />
+    <None Include="res\ph_PWMngr.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\autonk\hidpi.h" />
+    <ClInclude Include="..\..\autonk\hidsdi.h" />
+    <ClInclude Include="..\..\autonk\hidusage.h" />
+    <ClInclude Include="..\..\autonk\vld.h" />
+    <ClInclude Include="..\..\autonk\vld_def.h" />
+    <ClInclude Include="AdminGen.h" />
+    <ClInclude Include="AppCertKeyGen.h" />
+    <ClInclude Include="AppCertKeySet.h" />
+    <ClInclude Include="AppCertMngr.h" />
+    <ClInclude Include="AppCertNtfIp.h" />
+    <ClInclude Include="AppCertOnline.h" />
+    <ClInclude Include="AppIpMngr.h" />
+    <ClInclude Include="APPKeyChangePIN.h" />
+    <ClInclude Include="APPKeyGen.h" />
+    <ClInclude Include="APPKeyMngr.h" />
+    <ClInclude Include="APPKeyResume.h" />
+    <ClInclude Include="BackupKeyGen.h" />
+    <ClInclude Include="CACertAdd.h" />
+    <ClInclude Include="CACertMngr.h" />
+    <ClInclude Include="ChangeInitPin.h" />
+    <ClInclude Include="CheckKeyManager.h" />
+    <ClInclude Include="ChoseAlgid.h" />
+    <ClInclude Include="ChoseFilePath.h" />
+    <ClInclude Include="code.h" />
+    <ClInclude Include="DAI.h" />
+    <ClInclude Include="DAIDef.h" />
+    <ClInclude Include="DevAdminKeyMngr.h" />
+    <ClInclude Include="DevAdminMngr.h" />
+    <ClInclude Include="DevFirstBackup.h" />
+    <ClInclude Include="DevInfo.h" />
+    <ClInclude Include="DevIPMngr.h" />
+    <ClInclude Include="DevkeyBACKUP.h" />
+    <ClInclude Include="DevKeyFirBac.h" />
+    <ClInclude Include="DevKeyFirResume.h" />
+    <ClInclude Include="EncryptKeyBackup.h" />
+    <ClInclude Include="EncryptKeyGen.h" />
+    <ClInclude Include="EncryptKeyMngr.h" />
+    <ClInclude Include="EncryptKeyResume.h" />
+    <ClInclude Include="ErrorLogAudit.h" />
+    <ClInclude Include="FistBackupKey.h" />
+    <ClInclude Include="ForRecoveryFilePath.h" />
+    <ClInclude Include="HttpSocket.h" />
+    <ClInclude Include="InitDevInfo.h" />
+    <ClInclude Include="InitKeyTip.h" />
+    <ClInclude Include="IsInit.h" />
+    <ClInclude Include="KeyDAO.h" />
+    <ClInclude Include="KeyDevide.h" />
+    <ClInclude Include="Km_Error.h" />
+    <ClInclude Include="LogQuery.h" />
+    <ClInclude Include="MainMenuDlg.h" />
+    <ClInclude Include="misc.h" />
+    <ClInclude Include="MngrLogAudit.h" />
+    <ClInclude Include="MyUtil.h" />
+    <ClInclude Include="PHCDS_datatype.h" />
+    <ClInclude Include="PHCDS_error.h" />
+    <ClInclude Include="ph_km.h" />
+    <ClInclude Include="ph_PWMngr.h" />
+    <ClInclude Include="ph_PWMngrDlg.h" />
+    <ClInclude Include="ReqInputKeyPwd.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="ROOTCertMngr.h" />
+    <ClInclude Include="RTCertAdd.h" />
+    <ClInclude Include="SecBackupKey.h" />
+    <ClInclude Include="SeeDetail.h" />
+    <ClInclude Include="SeeLogDetail.h" />
+    <ClInclude Include="ServiceLogAudit.h" />
+    <ClInclude Include="ServiceLogDetail.h" />
+    <ClInclude Include="ServiceLogMngr.h" />
+    <ClInclude Include="SignPWMAdmin.h" />
+    <ClInclude Include="SmartCTCAPI.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="SysLogQuery.h" />
+    <ClInclude Include="SystemSmartKey.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="TimeMngr.h" />
+    <ClInclude Include="TIPDistroy.h" />
+    <ClInclude Include="TIPFormat.h" />
+    <ClInclude Include="UpdateSetMngr.h" />
+    <ClInclude Include="UserCertImport.h" />
+    <ClInclude Include="VerifyStragegyThree.h" />
+    <ClInclude Include="VerifyStragegyTwo.h" />
+    <ClInclude Include="VerifyStrategyFive.h" />
+    <ClInclude Include="VerifyStrategyFour.h" />
+    <ClInclude Include="VerifyStrategyOne.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AdminGen.cpp" />
+    <ClCompile Include="AppCertKeyGen.cpp" />
+    <ClCompile Include="AppCertKeySet.cpp" />
+    <ClCompile Include="AppCertMngr.cpp" />
+    <ClCompile Include="AppCertNtfIp.cpp" />
+    <ClCompile Include="AppCertOnline.cpp" />
+    <ClCompile Include="AppIpMngr.cpp" />
+    <ClCompile Include="APPKeyChangePIN.cpp" />
+    <ClCompile Include="APPKeyGen.cpp" />
+    <ClCompile Include="APPKeyMngr.cpp" />
+    <ClCompile Include="APPKeyResume.cpp" />
+    <ClCompile Include="BackupKeyGen.cpp" />
+    <ClCompile Include="CACertAdd.cpp" />
+    <ClCompile Include="CACertMngr.cpp" />
+    <ClCompile Include="ChangeInitPin.cpp" />
+    <ClCompile Include="CheckKeyManager.cpp" />
+    <ClCompile Include="ChoseAlgid.cpp" />
+    <ClCompile Include="ChoseFilePath.cpp" />
+    <ClCompile Include="code.cpp" />
+    <ClCompile Include="DAI.cpp" />
+    <ClCompile Include="DevAdminKeyMngr.cpp" />
+    <ClCompile Include="DevAdminMngr.cpp" />
+    <ClCompile Include="DevInfo.cpp" />
+    <ClCompile Include="DevIPMngr.cpp" />
+    <ClCompile Include="DevkeyBACKUP.cpp" />
+    <ClCompile Include="DevKeyFirBac.cpp" />
+    <ClCompile Include="DevKeyFirResume.cpp" />
+    <ClCompile Include="EncryptKeyGen.cpp" />
+    <ClCompile Include="EncryptKeyMngr.cpp" />
+    <ClCompile Include="EncryptKeyResume.cpp" />
+    <ClCompile Include="ErrorLogAudit.cpp" />
+    <ClCompile Include="FistBackupKey.cpp" />
+    <ClCompile Include="ForRecoveryFilePath.cpp" />
+    <ClCompile Include="HttpSocket.cpp" />
+    <ClCompile Include="InitDevInfo.cpp" />
+    <ClCompile Include="InitKeyTip.cpp" />
+    <ClCompile Include="IsInit.cpp" />
+    <ClCompile Include="KeyDAO.cpp" />
+    <ClCompile Include="Km_Error.cpp" />
+    <ClCompile Include="LogQuery.cpp" />
+    <ClCompile Include="MainMenuDlg.cpp" />
+    <ClCompile Include="misc.cpp" />
+    <ClCompile Include="MngrLogAudit.cpp" />
+    <ClCompile Include="MyUtil.cpp" />
+    <ClCompile Include="ph_km.cpp" />
+    <ClCompile Include="ph_PWMngr.cpp" />
+    <ClCompile Include="ph_PWMngrDlg.cpp" />
+    <ClCompile Include="ReqInputKeyPwd.cpp" />
+    <ClCompile Include="ROOTCertMngr.cpp" />
+    <ClCompile Include="RTCertAdd.cpp" />
+    <ClCompile Include="SecBackupKey.cpp" />
+    <ClCompile Include="SeeDetail.cpp" />
+    <ClCompile Include="SeeLogDetail.cpp" />
+    <ClCompile Include="ServiceLogAudit.cpp" />
+    <ClCompile Include="ServiceLogDetail.cpp" />
+    <ClCompile Include="ServiceLogMngr.cpp" />
+    <ClCompile Include="SignPWMAdmin.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="SysLogQuery.cpp" />
+    <ClCompile Include="SystemSmartKey.cpp" />
+    <ClCompile Include="TimeMngr.cpp" />
+    <ClCompile Include="TIPDistroy.cpp" />
+    <ClCompile Include="TIPFormat.cpp" />
+    <ClCompile Include="UpdateSetMngr.cpp" />
+    <ClCompile Include="UserCertImport.cpp" />
+    <ClCompile Include="VerifyStragegyThree.cpp" />
+    <ClCompile Include="VerifyStragegyTwo.cpp" />
+    <ClCompile Include="VerifyStrategyFive.cpp" />
+    <ClCompile Include="VerifyStrategyFour.cpp" />
+    <ClCompile Include="VerifyStrategyOne.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ph_PWMngr.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="KeyDevideDll.lib" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="ph_PWMngr.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
