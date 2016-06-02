@@ -317,6 +317,9 @@ void CAPPKeyMngr::OnBackup()
 	memset(sys_Key_2,0,256);
 	unsigned int len_2=Km_Decode((char *)B64Key2,B64KeyLen2,(char *)sys_Key_2);
 
+	memset(sys_Key_2,0,256);
+	unsigned int len_2=Km_Decode((char *)B64Key2,B64KeyLen2,(char *)sys_Key_2);
+
 	CDevKeyFirBac devKeyFirBacDlg3(3,_T("请插入第三份密钥备份密钥"));
 	if(devKeyFirBacDlg3.DoModal() == IDOK)
 	{
